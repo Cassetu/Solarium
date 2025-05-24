@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:has_structure/mineshaft",
+  "biomes": "#minecraft:is_dense/overworld",
   "step": "surface_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
