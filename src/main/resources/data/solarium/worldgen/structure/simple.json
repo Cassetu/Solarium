@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:is_dense/overworld",
+  "biomes": ["minecraft:old_growth_birch_forest","forest","taiga","grove","plains","meadow","flower_forest","birch_forest"],
   "step": "surface_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "beard_thin",
