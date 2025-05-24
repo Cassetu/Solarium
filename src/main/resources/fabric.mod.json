@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "solarium",
+	"version": "${version}",
+	"name": "Solarium",
+	"description": "New Solarpunk Themed Everything!",
+	"authors": [
+		"Cassetu"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@Cassetu",
+		"sources": ""
+	},
+	"license": "LGPL-2.1 license",
+	"icon": "assets/solarium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cassetu.solarium.Solarium"
+		],
+		"fabric-datagen": [
+			"cassetu.solarium.SolariumDataGenerator"
+		],
+		"client": [
+			"cassetu.solarium.SolariumClient"
+		]
+	},
+	"mixins": [
+		"solarium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
