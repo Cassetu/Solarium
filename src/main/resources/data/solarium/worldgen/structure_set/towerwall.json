@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "solarium:towerwall",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 70,
+    "separation": 44,
+    "salt": 1226296480
+  }
+}
