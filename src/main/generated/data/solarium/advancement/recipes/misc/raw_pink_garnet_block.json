@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "solarium:raw_pink_garnet_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdancy_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": "solarium:verdancy_core"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verdancy_core"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "solarium:raw_pink_garnet_block"
+    ]
+  }
+}

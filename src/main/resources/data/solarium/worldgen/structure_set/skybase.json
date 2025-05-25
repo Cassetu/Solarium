@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "solarium:skybase",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 60,
+    "separation": 34,
+    "salt": 1444496480
+  }
+}

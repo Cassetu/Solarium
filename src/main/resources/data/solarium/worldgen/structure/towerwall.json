@@ -1,11 +1,23 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": ["minecraft:desert","jungle","eroded_badlands","bamboo_jungle","savanna","windswept_savanna","savanna_plateau","wooded_badlands","badlands"],
+  "biomes": ["minecraft:desert", "minecraft:jungle", "minecraft:eroded_badlands", "minecraft:bamboo_jungle", "minecraft:savanna", "minecraft:windswept_savanna", "minecraft:savanna_plateau", "minecraft:wooded_badlands", "minecraft:badlands"],
   "step": "surface_structures",
-  "spawn_overrides": {},
+  "spawn_overrides": {
+    "creature": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:skeleton",
+          "weight": 1,
+          "minCount": 3,
+          "maxCount": 6
+        }
+      ]
+    }
+  },
   "terrain_adaptation": "beard_thin",
   "start_pool": "solarium:towerwall",
-  "size": 1,
+  "size": 12,
   "start_height": {
     "absolute": 0
   },
