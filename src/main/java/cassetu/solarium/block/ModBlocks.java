@@ -1,6 +1,7 @@
 package cassetu.solarium.block;
 
 import cassetu.solarium.Solarium;
+import cassetu.solarium.block.custom.PedestalBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -18,7 +19,8 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
 
-
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "P": {
+      "item": "solarium:plant_fiber"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " SP",
+    " PI",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "solarium:photosynthetic_filament"
+  }
+}

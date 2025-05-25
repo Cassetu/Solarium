@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_iron_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:iron_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_plant_fiber": {
+      "conditions": {
+        "items": [
+          {
+            "items": "solarium:plant_fiber"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_string": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:string"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "solarium:photosynthetic_filament"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_string",
+      "has_plant_fiber",
+      "has_iron_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "solarium:photosynthetic_filament"
+    ]
+  }
+}

@@ -24,5 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VERDANCY_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PHOTOSYNTHETIC_FILAMENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.OXYGEN_CONTAINER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLANT_FIBER, Models.GENERATED);
     }
 }

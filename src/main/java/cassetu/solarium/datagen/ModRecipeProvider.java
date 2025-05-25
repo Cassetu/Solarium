@@ -8,7 +8,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
+import net.minecraft.item.MinecartItem;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -31,13 +34,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         //offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.VERDANCY_CORE, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
-        //ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
-        //        .pattern("RRR")
-        //        .pattern("RRR")
-        //        .pattern("RRR")
-        //        .input('R', ModItems.VERDANCY_CORE)
-        //        .criterion(hasItem(ModItems.VERDANCY_CORE), conditionsFromItem(ModItems.VERDANCY_CORE))
-        //        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PHOTOSYNTHETIC_FILAMENT)
+                .pattern(" SP")
+                .pattern(" PI")
+                .pattern("   ")
+                .input('P', ModItems.PLANT_FIBER)
+                .input('S', Items.STRING)
+                .input('I', Items.IRON_NUGGET)
+                .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .criterion(hasItem(ModItems.PLANT_FIBER), conditionsFromItem(ModItems.PLANT_FIBER))
+                .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
+                .offerTo(exporter);
 
         //ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VERDANCY_CORE, 9)
         //        .input(ModBlocks.RAW_PINK_GARNET_BLOCK)

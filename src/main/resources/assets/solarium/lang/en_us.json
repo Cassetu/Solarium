@@ -1,0 +1,11 @@
+{
+  "itemgroup.solarium.blocks": "§7Solarium Blocks§r",
+  "itemgroup.solarium.items": "§7Solarium Items§r",
+
+  "item.solarium.plant_fiber": "Plant Fiber",
+  "item.solarium.verdancy_core": "§bVerdancy Core§r",
+  "item.solarium.oxygen_container": "Oxygen Container",
+  "item.solarium.photosynthetic_filament": "Photosynthetic Filament",
+
+  "block.solarium.pedestal": "Pedestal"
+}

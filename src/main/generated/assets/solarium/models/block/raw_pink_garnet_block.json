@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "solarium:block/raw_pink_garnet_block"
-  }
-}
