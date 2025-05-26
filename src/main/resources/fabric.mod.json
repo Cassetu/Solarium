@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"cassetu.solarium.SolariumClient"
+		],
+		"rei_client": [
+			"cassetu.solarium.compat.SolariumREIClient"
 		]
 	},
 	"mixins": [

@@ -6,6 +6,9 @@
   "item.solarium.verdancy_core": "§bVerdancy Core§r",
   "item.solarium.oxygen_container": "Oxygen Container",
   "item.solarium.photosynthetic_filament": "Photosynthetic Filament",
+  "item.solarium.radiant_silk": "§bRadiant Silk§r",
+  "item.solarium.echo_plate": "§bEcho Plate§r",
+  "item.solarium.living_fiber": "Living Fiber",
 
   "block.solarium.pedestal": "Pedestal",
   "block.solarium.growth_chamber": "Growth Chamber"
