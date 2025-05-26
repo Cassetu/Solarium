@@ -4,6 +4,7 @@ import cassetu.solarium.block.ModBlocks;
 import cassetu.solarium.block.entity.ModBlockEntities;
 import cassetu.solarium.item.ModItemGroups;
 import cassetu.solarium.item.ModItems;
+import cassetu.solarium.recipe.ModRecipes;
 import cassetu.solarium.util.ModLootTableModifiers;
 import cassetu.solarium.util.ModTags;
 import net.fabricmc.api.ModInitializer;
@@ -22,5 +23,6 @@ public class Solarium implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModLootTableModifiers.modifyLootTables();
 		ModBlockEntities.registerBlockEntities();
+		ModRecipes.registerRecipes();
 	}
 }

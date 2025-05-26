@@ -7,5 +7,6 @@
   "item.solarium.oxygen_container": "Oxygen Container",
   "item.solarium.photosynthetic_filament": "Photosynthetic Filament",
 
-  "block.solarium.pedestal": "Pedestal"
+  "block.solarium.pedestal": "Pedestal",
+  "block.solarium.growth_chamber": "Growth Chamber"
 }

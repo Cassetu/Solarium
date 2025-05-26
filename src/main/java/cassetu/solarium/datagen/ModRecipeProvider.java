@@ -46,6 +46,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_NUGGET), conditionsFromItem(Items.IRON_NUGGET))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.PEDESTAL)
+                .pattern(" M ")
+                .pattern(" C ")
+                .pattern("MMM")
+                .input('M', Items.SMOOTH_STONE_SLAB)
+                .input('C', Items.COBBLESTONE)
+                .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
+                .criterion(hasItem(Items.SMOOTH_STONE_SLAB), conditionsFromItem(Items.SMOOTH_STONE_SLAB))
+                .offerTo(exporter);
+
         //ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VERDANCY_CORE, 9)
         //        .input(ModBlocks.RAW_PINK_GARNET_BLOCK)
         //        .criterion(hasItem(ModBlocks.RAW_PINK_GARNET_BLOCK), conditionsFromItem(ModBlocks.RAW_PINK_GARNET_BLOCK))

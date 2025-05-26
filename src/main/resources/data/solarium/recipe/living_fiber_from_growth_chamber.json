@@ -1,0 +1,9 @@
+{
+  "type": "solarium:growth_chamber",
+  "ingredient": {
+    "item": "solarium:plant_fiber"
+  },
+  "result": {
+    "id": "solarium:living_fiber"
+  }
+}

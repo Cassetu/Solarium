@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "M": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "pattern": [
+    " M ",
+    " C ",
+    "MMM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "solarium:pedestal"
+  }
+}

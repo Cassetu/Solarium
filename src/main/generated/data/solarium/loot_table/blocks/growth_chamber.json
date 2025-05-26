@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "solarium:pink_garnet_block"
+          "name": "solarium:growth_chamber"
         }
       ],
       "rolls": 1.0

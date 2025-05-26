@@ -15,13 +15,16 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GROWTH_CHAMBER);
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.VERDANCY_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ECHO_PLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RADIANT_SILK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIVING_FIBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.PHOTOSYNTHETIC_FILAMENT, Models.GENERATED);
         itemModelGenerator.register(ModItems.OXYGEN_CONTAINER, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLANT_FIBER, Models.GENERATED);

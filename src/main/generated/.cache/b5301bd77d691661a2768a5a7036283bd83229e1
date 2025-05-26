@@ -1,8 +1,11 @@
-// 1.21.1	2025-05-25T13:44:10.1370036	Solarium/Model Definitions
-c36e45a3e1adc3ade40395f2477f55d3b606e712 assets\solarium\blockstates\pink_garnet_block.json
-e86c3b87efddb25e776d00de1752c9f932ee5eea assets\solarium\models\block\pink_garnet_block.json
+// 1.21.1	2025-05-26T08:45:06.9540652	Solarium/Model Definitions
 7b6565acf4497ae9062a0a2b7ad66c15110cdc6c assets\solarium\models\item\photosynthetic_filament.json
+a228e7de21b208486cc9a84212d12c49eaad64f7 assets\solarium\models\item\radiant_silk.json
+f5fb2cc80039b695e7ed5a614865e0124e5ef428 assets\solarium\models\block\growth_chamber.json
 7a6e9cfc22d94637b749b8cf41ad8a059ec73dc8 assets\solarium\models\item\verdancy_core.json
 564987f5f20eb768891b35c3ac660d8f226831d2 assets\solarium\models\item\plant_fiber.json
 36a5a8f3c248daf03f411a46b875c24219e1d23b assets\solarium\models\item\oxygen_container.json
-4d179cc93ee8ea0d6a97bfe76906485cb15f8664 assets\solarium\models\item\pink_garnet_block.json
+8b26e16b5c89031ad12dceff6508cd3a3387212a assets\solarium\models\item\growth_chamber.json
+22f1398486757f219f58e571b803ad6bec4ef39a assets\solarium\models\item\living_fiber.json
+f96272cd48f0c3197e547deafb1691417e86edad assets\solarium\blockstates\growth_chamber.json
+48ab7963eeca3e6dead2ef6a2ae52d6030de8c0f assets\solarium\models\item\echo_plate.json

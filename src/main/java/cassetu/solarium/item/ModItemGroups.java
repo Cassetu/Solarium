@@ -20,6 +20,10 @@ public class ModItemGroups {
                         entries.add(ModItems.PHOTOSYNTHETIC_FILAMENT);
                         entries.add(ModItems.VERDANCY_CORE);
                         entries.add(ModItems.OXYGEN_CONTAINER);
+                        entries.add(ModItems.RADIANT_SILK);
+                        entries.add(ModItems.LIVING_FIBER);
+                        entries.add(ModItems.ECHO_PLATE);
+
                     }).build());
 
     public static final ItemGroup SOLARIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -28,7 +32,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.solarium.blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PEDESTAL);
-
+                        entries.add(ModBlocks.GROWTH_CHAMBER);
 
                     }).build());
 
