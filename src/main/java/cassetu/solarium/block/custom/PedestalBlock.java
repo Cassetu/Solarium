@@ -1,5 +1,6 @@
 package cassetu.solarium.block.custom;
 
+import cassetu.solarium.block.entity.custom.PedestalBlockEntity;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
