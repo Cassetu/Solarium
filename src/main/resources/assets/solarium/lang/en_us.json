@@ -9,7 +9,11 @@
   "item.solarium.radiant_silk": "§bRadiant Silk§r",
   "item.solarium.echo_plate": "§bEcho Plate§r",
   "item.solarium.living_fiber": "Living Fiber",
+  "item.solarium.ashen_remnants": "Ashen Remnants",
+  "item.solarium.pearl_fragments": "Pearl Fragments",
 
   "block.solarium.pedestal": "Pedestal",
-  "block.solarium.growth_chamber": "Growth Chamber"
+  "block.solarium.growth_chamber": "§bGrowth Chamber§r",
+  "block.solarium.blighted_silt": "Blighted Silt",
+  "block.solarium.dissolver": "§bDissolver§r"
 }

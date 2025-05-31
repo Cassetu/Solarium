@@ -15,9 +15,12 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block PINK_GARNET_BLOCK = registerBlock("pink_garnet_block",
-            new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block BLIGHTED_SILT = registerBlock("blighted_silt",
+            new Block(AbstractBlock.Settings.create().strength(2f)
+                    .requiresTool().sounds(BlockSoundGroup.SOUL_SAND)));
+
+    public static final Block DISSOLVER = registerBlock("dissolver",
+            new Block(AbstractBlock.Settings.create()));
 
     public static final Block PEDESTAL = registerBlock("pedestal",
             new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
@@ -38,8 +41,8 @@ public class ModBlocks {
     public static void registerModBlocks() {
         Solarium.LOGGER.info("Registering Mod Blocks for " + Solarium.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.PINK_GARNET_BLOCK);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ModBlocks.BLIGHTED_SILT);
         });
     }
 }

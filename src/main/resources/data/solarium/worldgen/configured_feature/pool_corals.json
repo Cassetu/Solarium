@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "tries": 5,
+    "xz_spread": 6,
+    "y_spread": 2,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:dual_noise_provider",
+            "seed": 2345,
+            "noise": {
+              "firstOctave": -3,
+              "amplitudes": [
+                1
+              ]
+            },
+            "scale": 1,
+            "variety": {
+              "min_inclusive": 1,
+              "max_inclusive": 1
+            },
+            "slow_noise": {
+              "firstOctave": -1,
+              "amplitudes": [
+                1
+              ]
+            },
+            "slow_scale": 1,
+            "states": [
+              {
+                "Name": "minecraft:dead_horn_coral"
+              },
+              {
+                "Name": "minecraft:dead_horn_coral_fan"
+              },
+              {
+                "Name": "minecraft:dead_tube_coral"
+              },
+              {
+                "Name": "minecraft:dead_tube_coral_fan"
+              },
+              {
+                "Name": "minecraft:dead_bubble_coral"
+              },
+              {
+                "Name": "minecraft:dead_bubble_coral_fan"
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:water"
+          }
+        }
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "solarium:ironblight_box",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 60,
+    "separation": 34,
+    "salt": 1646233434
+  }
+}

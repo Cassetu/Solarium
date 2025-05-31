@@ -28,6 +28,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.PEDESTAL);
         addDrop(ModBlocks.GROWTH_CHAMBER);
+        addDrop(ModBlocks.BLIGHTED_SILT);
 
         //addDrop(ModBlocks.PINK_GARNET_ORE, oreDrops(ModBlocks.PINK_GARNET_ORE, ModItems.PHOTOSYNTHETIC_FILAMENT));
         //addDrop(ModBlocks.PINK_GARNET_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.PINK_GARNET_DEEPSLATE_ORE, ModItems.VERDANCY_CORE, 3, 7));

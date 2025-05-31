@@ -23,6 +23,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RADIANT_SILK);
                         entries.add(ModItems.LIVING_FIBER);
                         entries.add(ModItems.ECHO_PLATE);
+                        entries.add(ModItems.ASHEN_REMNANTS);
+                        entries.add(ModItems.PEARL_FRAGMENTS);
 
                     }).build());
 
@@ -33,7 +35,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PEDESTAL);
                         entries.add(ModBlocks.GROWTH_CHAMBER);
-
+                        entries.add(ModBlocks.BLIGHTED_SILT);
+                        entries.add(ModBlocks.DISSOLVER);
                     }).build());
 
 

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:min",
+  "argument1": {
+    "type": "minecraft:range_choice",
+    "input": "minecraft:overworld/depth",
+    "min_inclusive": 0.95,
+    "max_exclusive": 10,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": "minecraft:overworld/erosion",
+      "min_inclusive": -0.375,
+      "max_exclusive": 1,
+      "when_in_range": {
+        "type": "minecraft:range_choice",
+        "input": "minecraft:overworld/continents",
+        "min_inclusive": 0.3,
+        "max_exclusive": 1,
+        "when_in_range": -1,
+        "when_out_of_range": 1
+      },
+      "when_out_of_range": 1
+    },
+    "when_out_of_range": 1
+  },
+  "argument2": {
+    "type": "minecraft:noise",
+    "noise": "minecraft:aquifer_lava",
+    "xz_scale": 1,
+    "y_scale": 1
+  }
+}
+

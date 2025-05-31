@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "solarium:solarcubetower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 90,
+    "separation": 44,
+    "salt": 1768496482
+  }
+}

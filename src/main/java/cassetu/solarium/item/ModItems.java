@@ -17,6 +17,8 @@ public class ModItems {
     public static final Item ECHO_PLATE= registerItem("echo_plate", new Item(new Item.Settings()));
     public static final Item LIVING_FIBER = registerItem("living_fiber", new Item(new Item.Settings()));
     public static final Item RADIANT_SILK = registerItem("radiant_silk", new Item(new Item.Settings()));
+    public static final Item PEARL_FRAGMENTS = registerItem("pearl_fragments", new Item(new Item.Settings()));
+    public static final Item ASHEN_REMNANTS = registerItem("ashen_remnants", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Solarium.MOD_ID, name), item);

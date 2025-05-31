@@ -30,8 +30,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:name_tag"
+          "weight": 5,
+          "name": "solarium:radiant_silk"
         },
         {
           "type": "minecraft:item",
