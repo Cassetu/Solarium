@@ -14,7 +14,7 @@
     "yScale": {
       "type": "minecraft:uniform",
       "min_inclusive": 0.4,
-      "max_exclusive": 0.9
+      "max_exclusive": 0.7
     },
     "lava_level": {
       "absolute": -65
@@ -22,8 +22,8 @@
     "replaceable": "#minecraft:overworld_carver_replaceables",
     "horizontal_radius_multiplier": {
       "type": "minecraft:uniform",
-      "min_inclusive": 9,
-      "max_exclusive": 16
+      "min_inclusive": 16,
+      "max_exclusive": 24
     },
     "vertical_radius_multiplier": {
       "type": "minecraft:uniform",
@@ -32,7 +32,7 @@
     },
     "floor_level": {
       "type": "minecraft:uniform",
-      "min_inclusive": -0.5,
+      "min_inclusive": -0.8,
       "max_exclusive": 0
     }
   }
