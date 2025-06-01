@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-31T20:50:32.6756652	Solarium/Model Definitions
+// 1.21.1	2025-05-31T21:29:25.8554301	Solarium/Model Definitions
 7a6e9cfc22d94637b749b8cf41ad8a059ec73dc8 assets\solarium\models\item\verdancy_core.json
 0b2acf97e9bb158929d9f58d382f63267ce22d28 assets\solarium\blockstates\blighted_silt.json
 1159ec7e6f97238b6bc55b2040aa77a4e01ff939 assets\solarium\models\item\ashen_remnants.json
@@ -10,8 +10,8 @@ e3d8b8fc0a3ae5b365f86ea993dbebf8755b885a assets\solarium\models\block\charred_re
 4334a656af74ed826c139d1d2a31d433fb8969c5 assets\solarium\models\block\blighted_silt.json
 f5fb2cc80039b695e7ed5a614865e0124e5ef428 assets\solarium\models\block\growth_chamber.json
 35a34e14318a826b10fef3cbd36d104d8eaa060a assets\solarium\blockstates\dissolver.json
-564987f5f20eb768891b35c3ac660d8f226831d2 assets\solarium\models\item\plant_fiber.json
 707821150ab1602ac4dc787c6d65d3f0db67e871 assets\solarium\blockstates\molten_residuum.json
+564987f5f20eb768891b35c3ac660d8f226831d2 assets\solarium\models\item\plant_fiber.json
 afd77dfb2159eff0384e059b1dbb02a85fa7bd28 assets\solarium\models\block\molten_residuum.json
 af9cebfd36f019291dc11ea1a601402a8a918079 assets\solarium\blockstates\charred_residuum.json
 a228e7de21b208486cc9a84212d12c49eaad64f7 assets\solarium\models\item\radiant_silk.json

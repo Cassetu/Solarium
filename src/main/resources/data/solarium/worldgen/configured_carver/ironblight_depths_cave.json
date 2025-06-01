@@ -1,14 +1,14 @@
 {
   "type": "minecraft:cave",
   "config": {
-    "probability": 0.6,
+    "probability": 0.8,
     "y": {
       "type": "minecraft:uniform",
       "min_inclusive": {
         "absolute": -40
       },
       "max_inclusive": {
-        "absolute": 180
+        "absolute": 15
       }
     },
     "yScale": {

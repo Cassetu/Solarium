@@ -88,7 +88,10 @@
     [
       "solarium:ironblight_depths_silt",
       "solarium:underground_basalt_floor",
-      "solarium:blackstone_blobs"
+      "solarium:blackstone_blobs",
+      "solarium:charred_residuum_blobs",
+      "solarium:molten_residuum_blobs",
+      "solarium:magma_blobs"
     ],
     [
       "minecraft:glow_lichen",

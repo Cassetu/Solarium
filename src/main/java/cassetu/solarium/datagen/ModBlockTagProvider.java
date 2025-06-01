@@ -1,6 +1,7 @@
 package cassetu.solarium.datagen;
 
 import cassetu.solarium.block.ModBlocks;
+import cassetu.solarium.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -17,6 +18,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.BLIGHTED_SILT);
+
+        getOrCreateTagBuilder(ModTags.Blocks.CHARRED_BLOCKS)
+                .add(ModBlocks.CHARRED_RESIDUUM);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MOLTEN_RESIDUUM)

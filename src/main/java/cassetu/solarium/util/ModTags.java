@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> CHARRED_BLOCKS = createTag("charred_blocks");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(Solarium.MOD_ID, name));

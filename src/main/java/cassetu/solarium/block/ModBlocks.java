@@ -21,11 +21,11 @@ public class ModBlocks {
 
     public static final Block CHARRED_RESIDUUM = registerBlock("charred_residuum",
             new Block(AbstractBlock.Settings.create().strength(3f)
-                    .requiresTool().sounds(BlockSoundGroup.WEEPING_VINES)));
+                    .requiresTool().sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
 
     public static final Block MOLTEN_RESIDUUM = registerBlock("molten_residuum",
             new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.NYLIUM)));
+                    .requiresTool().sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
 
     public static final Block DISSOLVER = registerBlock("dissolver",
             new Block(AbstractBlock.Settings.create()));
