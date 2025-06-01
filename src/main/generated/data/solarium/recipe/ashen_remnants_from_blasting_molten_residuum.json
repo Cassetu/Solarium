@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.05,
+  "group": "residuum",
+  "ingredient": {
+    "item": "solarium:molten_residuum"
+  },
+  "result": {
+    "id": "solarium:ashen_remnants"
+  }
+}

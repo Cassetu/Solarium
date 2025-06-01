@@ -35,8 +35,10 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PEDESTAL);
                         entries.add(ModBlocks.GROWTH_CHAMBER);
-                        entries.add(ModBlocks.BLIGHTED_SILT);
                         entries.add(ModBlocks.DISSOLVER);
+                        entries.add(ModBlocks.BLIGHTED_SILT);
+                        entries.add(ModBlocks.MOLTEN_RESIDUUM);
+                        entries.add(ModBlocks.CHARRED_RESIDUUM);
                     }).build());
 
 

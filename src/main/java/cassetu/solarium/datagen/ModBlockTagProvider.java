@@ -18,7 +18,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.BLIGHTED_SILT);
 
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.MOLTEN_RESIDUUM)
+                .add(ModBlocks.CHARRED_RESIDUUM);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.BLIGHTED_SILT);
+                .add(ModBlocks.BLIGHTED_SILT)
+                .add(ModBlocks.CHARRED_RESIDUUM)
+                .add(ModBlocks.MOLTEN_RESIDUUM);
+
     }
 }

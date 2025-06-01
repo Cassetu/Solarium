@@ -19,6 +19,14 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(2f)
                     .requiresTool().sounds(BlockSoundGroup.SOUL_SAND)));
 
+    public static final Block CHARRED_RESIDUUM = registerBlock("charred_residuum",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool().sounds(BlockSoundGroup.WEEPING_VINES)));
+
+    public static final Block MOLTEN_RESIDUUM = registerBlock("molten_residuum",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.NYLIUM)));
+
     public static final Block DISSOLVER = registerBlock("dissolver",
             new Block(AbstractBlock.Settings.create()));
 

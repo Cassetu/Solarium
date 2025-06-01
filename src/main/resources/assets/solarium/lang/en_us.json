@@ -15,5 +15,7 @@
   "block.solarium.pedestal": "Pedestal",
   "block.solarium.growth_chamber": "§bGrowth Chamber§r",
   "block.solarium.blighted_silt": "Blighted Silt",
+  "block.solarium.charred_residuum": "Charred Residuum",
+  "block.solarium.molten_residuum": "Molten Residuum",
   "block.solarium.dissolver": "§bDissolver§r"
 }

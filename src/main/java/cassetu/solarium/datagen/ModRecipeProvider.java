@@ -26,11 +26,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        //List<ItemConvertible> PINK_GARNET_SMELTABLES = List.of(ModItems.VERDANCY_CORE, ModBlocks.PINK_GARNET_ORE,
-        //        ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+        List<ItemConvertible> RESIDUUM_SMELTABLES = List.of(ModBlocks.CHARRED_RESIDUUM,
+                ModBlocks.MOLTEN_RESIDUUM);
 
-        //offerSmelting(exporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.VERDANCY_CORE, 0.25f, 200, "pink_garnet");
-        //offerBlasting(exporter, PINK_GARNET_SMELTABLES, RecipeCategory.MISC, ModItems.VERDANCY_CORE, 0.25f, 100, "pink_garnet");
+        offerSmelting(exporter, RESIDUUM_SMELTABLES, RecipeCategory.MISC, ModItems.ASHEN_REMNANTS, 0.05f, 500, "residuum");
+        offerBlasting(exporter, RESIDUUM_SMELTABLES, RecipeCategory.MISC, ModItems.ASHEN_REMNANTS, 0.05f, 250, "residuum");
 
         //offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.VERDANCY_CORE, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 

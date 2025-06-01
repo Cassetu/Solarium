@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 500,
+  "experience": 0.05,
+  "group": "residuum",
+  "ingredient": {
+    "item": "solarium:charred_residuum"
+  },
+  "result": {
+    "id": "solarium:ashen_remnants"
+  }
+}

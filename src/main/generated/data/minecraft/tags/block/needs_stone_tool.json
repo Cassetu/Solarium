@@ -1,5 +1,7 @@
 {
   "values": [
-    "solarium:blighted_silt"
+    "solarium:blighted_silt",
+    "solarium:charred_residuum",
+    "solarium:molten_residuum"
   ]
 }
