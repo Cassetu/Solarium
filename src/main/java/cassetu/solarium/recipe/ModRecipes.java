@@ -19,6 +19,18 @@ public class ModRecipes {
                 }
             });
 
+    public static final RecipeSerializer<DissolverRecipe> DISSOLVER_SERIALIZER = Registry.register(
+            Registries.RECIPE_SERIALIZER, Identifier.of(Solarium.MOD_ID, "dissolver"),
+            new DissolverRecipe.Serializer());
+    public static final RecipeType<DissolverRecipe> DISSOLVER_TYPE = Registry.register(
+            Registries.RECIPE_TYPE, Identifier.of(Solarium.MOD_ID, "dissolver"), new RecipeType<DissolverRecipe>() {
+                @Override
+                public String toString() {
+                    return "dissolver";
+                }
+            });
+
+
     public static void registerRecipes() {
         Solarium.LOGGER.info("Registering Custom Recipes for " + Solarium.MOD_ID);
     }

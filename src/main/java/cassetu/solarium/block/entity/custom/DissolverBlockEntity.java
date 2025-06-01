@@ -2,18 +2,14 @@ package cassetu.solarium.block.entity.custom;
 
 import cassetu.solarium.block.entity.ImplementedInventory;
 import cassetu.solarium.block.entity.ModBlockEntities;
-import cassetu.solarium.item.ModItems;
-import cassetu.solarium.recipe.GrowthChamberRecipe;
-import cassetu.solarium.recipe.GrowthChamberRecipeInput;
-import cassetu.solarium.recipe.ModRecipes;
-import cassetu.solarium.screen.custom.GrowthChamberScreenHandler;
+import cassetu.solarium.recipe.*;
+import cassetu.solarium.screen.custom.DissolverScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
@@ -32,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
+public class DissolverBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT = 0;
@@ -40,16 +36,16 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 800;
+    private int maxProgress = 472;
 
-    public GrowthChamberBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.GROWTH_CHAMBER_BE, pos, state);
+    public DissolverBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.DISSOLVER_BE, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> GrowthChamberBlockEntity.this.progress;
-                    case 1 -> GrowthChamberBlockEntity.this.maxProgress;
+                    case 0 -> DissolverBlockEntity.this.progress;
+                    case 1 -> DissolverBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -57,8 +53,8 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
             @Override
             public void set(int index, int value) {
                 switch (index) {
-                    case 0: GrowthChamberBlockEntity.this.progress = value;
-                    case 1: GrowthChamberBlockEntity.this.maxProgress = value;
+                    case 0: DissolverBlockEntity.this.progress = value;
+                    case 1: DissolverBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -81,28 +77,28 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("block.solarium.growth_chamber");
+        return Text.translatable("block.solarium.dissolver");
     }
 
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new GrowthChamberScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+        return new DissolverScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     @Override
     protected void writeNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         super.writeNbt(nbt, registryLookup);
         Inventories.writeNbt(nbt, inventory, registryLookup);
-        nbt.putInt("growth_chamber.progress", progress);
-        nbt.putInt("growth_chamber.max_progress", maxProgress);
+        nbt.putInt("dissolver.progress", progress);
+        nbt.putInt("dissolver.max_progress", maxProgress);
     }
 
     @Override
     protected void readNbt(NbtCompound nbt, RegistryWrapper.WrapperLookup registryLookup) {
         Inventories.readNbt(nbt, inventory, registryLookup);
-        progress = nbt.getInt("growth_chamber.progress");
-        maxProgress = nbt.getInt("growth_chamber.max_progress");
+        progress = nbt.getInt("dissolver.progress");
+        maxProgress = nbt.getInt("dissolver.max_progress");
         super.readNbt(nbt, registryLookup);
     }
 
@@ -122,11 +118,11 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
 
     private void resetProgress() {
         this.progress = 0;
-        this.maxProgress = 800;
+        this.maxProgress = 472;
     }
 
     private void craftItem() {
-        Optional<RecipeEntry<GrowthChamberRecipe>> recipe = getCurrentRecipe();
+        Optional<RecipeEntry<DissolverRecipe>> recipe = getCurrentRecipe();
 
         ItemStack output = recipe.get().value().output();
 
@@ -144,15 +140,15 @@ public class GrowthChamberBlockEntity extends BlockEntity implements ExtendedScr
     }
 
     private boolean hasRecipe() {
-        Optional<RecipeEntry<GrowthChamberRecipe>> recipe = getCurrentRecipe();
+        Optional<RecipeEntry<DissolverRecipe>> recipe = getCurrentRecipe();
         if (recipe.isEmpty()) {return false;}
         ItemStack output = recipe.get().value().output();
         return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
     }
 
-    private Optional<RecipeEntry<GrowthChamberRecipe>> getCurrentRecipe() {
+    private Optional<RecipeEntry<DissolverRecipe>> getCurrentRecipe() {
         return this.getWorld().getRecipeManager()
-                .getFirstMatch(ModRecipes.GROWTH_CHAMBER_TYPE, new GrowthChamberRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
+                .getFirstMatch(ModRecipes.DISSOLVER_TYPE, new DissolverRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

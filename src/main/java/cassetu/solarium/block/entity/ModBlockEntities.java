@@ -2,6 +2,7 @@ package cassetu.solarium.block.entity;
 
 import cassetu.solarium.Solarium;
 import cassetu.solarium.block.ModBlocks;
+import cassetu.solarium.block.entity.custom.DissolverBlockEntity;
 import cassetu.solarium.block.entity.custom.GrowthChamberBlockEntity;
 import cassetu.solarium.block.entity.custom.PedestalBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -17,6 +18,10 @@ public class ModBlockEntities {
     public static final BlockEntityType<GrowthChamberBlockEntity> GROWTH_CHAMBER_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Solarium.MOD_ID, "growth_chamber_be"),
                     BlockEntityType.Builder.create(GrowthChamberBlockEntity::new, ModBlocks.GROWTH_CHAMBER).build(null));
+
+    public static final BlockEntityType<DissolverBlockEntity> DISSOLVER_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Solarium.MOD_ID, "dissolver_be"),
+                    BlockEntityType.Builder.create(DissolverBlockEntity::new, ModBlocks.DISSOLVER).build(null));
 
     public static void registerBlockEntities() {
         Solarium.LOGGER.info("Registering Block Entities for " + Solarium.MOD_ID);

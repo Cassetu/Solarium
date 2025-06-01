@@ -1,6 +1,7 @@
 package cassetu.solarium.block;
 
 import cassetu.solarium.Solarium;
+import cassetu.solarium.block.custom.DissolverBlock;
 import cassetu.solarium.block.custom.GrowthChamberBlock;
 import cassetu.solarium.block.custom.PedestalBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -28,7 +29,7 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
 
     public static final Block DISSOLVER = registerBlock("dissolver",
-            new Block(AbstractBlock.Settings.create()));
+            new DissolverBlock(AbstractBlock.Settings.create()));
 
     public static final Block PEDESTAL = registerBlock("pedestal",
             new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));

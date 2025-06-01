@@ -1,0 +1,10 @@
+{
+  "type": "solarium:dissolver",
+  "ingredient": {
+    "item": "solarium:molten_residuum"
+  },
+  "result": {
+    "count": 2,
+    "id": "solarium:ashen_remnants"
+  }
+}
