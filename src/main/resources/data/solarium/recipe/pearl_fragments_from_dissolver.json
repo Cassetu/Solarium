@@ -1,0 +1,10 @@
+{
+  "type": "solarium:dissolver",
+  "ingredient": {
+    "item": "minecraft:ender_pearl"
+  },
+  "result": {
+    "count": 4,
+    "id": "solarium:pearl_fragments"
+  }
+}
