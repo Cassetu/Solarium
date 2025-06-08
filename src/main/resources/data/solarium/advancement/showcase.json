@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "solarium:pedestal"
+    },
+    "title": "Showcase!",
+    "description": "Place a Pedestal",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "showcase_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "solarium:pedestal"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 230
+  },
+  "parent": "solarium:root"
+}

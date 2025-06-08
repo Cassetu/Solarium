@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "solarium:photosynthetic_filament"
+    },
+    "title": "Leaf It To Me!",
+    "description": "You've harnessed the power of plant-life and metal. Nature approves",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "leaf_it_to_me_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "solarium:photosynthetic_filament"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 230,
+    "loot": [
+      "advancement_overload:blocks/bov"
+    ]
+  },
+  "parent": "solarium:root"
+}

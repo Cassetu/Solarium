@@ -33,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PLANT_FIBER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ASHEN_REMNANTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.PEARL_FRAGMENTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLIGHTED_SILT_DUST, Models.GENERATED);
 
     }
 }

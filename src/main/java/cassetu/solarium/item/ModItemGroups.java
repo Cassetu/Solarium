@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ECHO_PLATE);
                         entries.add(ModItems.ASHEN_REMNANTS);
                         entries.add(ModItems.PEARL_FRAGMENTS);
+                        entries.add(ModItems.BLIGHTED_SILT_DUST);
 
                     }).build());
 

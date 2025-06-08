@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "solarium:growth_chamber"
+    },
+    "title": "Grow Up Already",
+    "description": "Place a Growth Chamber and finally let your crops touch grass... artificially",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    ["grow_up_already_0"]
+  ],
+  "criteria": {
+    "grow_up_already_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "solarium:growth_chamber"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 230
+  },
+  "parent": "solarium:root"
+}

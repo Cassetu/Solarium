@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "solarium:verdancy_core"
+    },
+    "title": "Solarium",
+    "description": "Thanks For Downloading The Solarpunk Mod!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "solarium:textures/block/blighted_silt.png"
+  },
+  "criteria": {
+    "automatic": {
+      "trigger": "minecraft:location"
+    }
+  }
+}

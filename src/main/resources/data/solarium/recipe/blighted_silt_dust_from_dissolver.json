@@ -1,0 +1,10 @@
+{
+  "type": "solarium:dissolver",
+  "ingredient": {
+    "item": "solarium:blighted_silt"
+  },
+  "result": {
+    "count": 6,
+    "id": "solarium:blighted_silt_dust"
+  }
+}

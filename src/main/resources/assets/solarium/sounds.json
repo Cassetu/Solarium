@@ -1,0 +1,32 @@
+{
+  "blighted_silt_break": {
+    "subtitle": "sounds.solarium.blighted_silt_interact",
+    "sounds": [
+      "solarium:blighted_silt_place"
+    ]
+  },
+  "blighted_silt_fall": {
+    "subtitle": "sounds.solarium.blighted_silt_fall",
+    "sounds": [
+      "solarium:blighted_silt_hit"
+    ]
+  },
+  "blighted_silt_place": {
+    "subtitle": "sounds.solarium.blighted_silt_interact",
+    "sounds": [
+      "solarium:blighted_silt_place"
+    ]
+  },
+  "blighted_silt_hit": {
+    "subtitle": "sounds.solarium.blighted_silt_interact",
+    "sounds": [
+      "solarium:blighted_silt_place"
+    ]
+  },
+  "blighted_silt_step": {
+    "subtitle": "sounds.solarium.blighted_silt_step",
+    "sounds": [
+      "solarium:blighted_silt_step"
+    ]
+  }
+}

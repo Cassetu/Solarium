@@ -2,6 +2,9 @@
   "itemgroup.solarium.blocks": "§7Solarium Blocks§r",
   "itemgroup.solarium.items": "§7Solarium Items§r",
 
+  "effect.solarium.rustbind": "§4Rustbind§r",
+  "effect.solarium.blightrot": "§2Blight Rot§r",
+
   "item.solarium.plant_fiber": "Plant Fiber",
   "item.solarium.verdancy_core": "§bVerdancy Core§r",
   "item.solarium.oxygen_container": "Oxygen Container",
@@ -11,11 +14,26 @@
   "item.solarium.living_fiber": "Living Fiber",
   "item.solarium.ashen_remnants": "Ashen Remnants",
   "item.solarium.pearl_fragments": "Pearl Fragments",
+  "item.solarium.blighted_silt_dust": "Blighted Silt Dust",
+
+  "item.minecraft.potion.effect.rustbind_potion": "Rustbind Potion",
+  "item.minecraft.splash_potion.effect.rustbind_potion": "Rustbind Splash Potion",
+  "item.minecraft.lingering_potion.effect.rustbind_potion": "Rustbind Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.rustbind_potion": "Rustbind Tipped Arrow",
+
+  "item.minecraft.potion.effect.blight_potion": "Blight Rot Potion",
+  "item.minecraft.splash_potion.effect.blight_potion": "Blight Rot Splash Potion",
+  "item.minecraft.lingering_potion.effect.blight_potion": "Blight Rot Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.blight_potion": "Blight Tipped Arrow",
 
   "block.solarium.pedestal": "Pedestal",
   "block.solarium.growth_chamber": "§bGrowth Chamber§r",
   "block.solarium.blighted_silt": "Blighted Silt",
   "block.solarium.charred_residuum": "Charred Residuum",
   "block.solarium.molten_residuum": "Molten Residuum",
-  "block.solarium.dissolver": "§bDissolver§r"
+  "block.solarium.dissolver": "§bDissolver§r",
+
+  "sounds.solarium.blighted_silt_fall": "Blighted Silt Fall",
+  "sounds.solarium.blighted_silt_interact": "Blighted Silt Interaction",
+  "sounds.solarium.blighted_silt_step": "Blighted Silt Footstep"
 }

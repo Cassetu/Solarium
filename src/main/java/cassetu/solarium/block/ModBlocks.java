@@ -4,6 +4,7 @@ import cassetu.solarium.Solarium;
 import cassetu.solarium.block.custom.DissolverBlock;
 import cassetu.solarium.block.custom.GrowthChamberBlock;
 import cassetu.solarium.block.custom.PedestalBlock;
+import cassetu.solarium.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -18,7 +19,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block BLIGHTED_SILT = registerBlock("blighted_silt",
             new Block(AbstractBlock.Settings.create().strength(2f)
-                    .requiresTool().sounds(BlockSoundGroup.SOUL_SAND)));
+                    .requiresTool().sounds(ModSounds.BLIGHTED_SILT_SOUND)));
 
     public static final Block CHARRED_RESIDUUM = registerBlock("charred_residuum",
             new Block(AbstractBlock.Settings.create().strength(3f)

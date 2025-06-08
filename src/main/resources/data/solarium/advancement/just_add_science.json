@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "solarium:dissolver"
+    },
+    "title": "Just Add Science",
+    "description": "Place a Dissolver and turn solid hopes into liquid disappointment",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "just_add_science_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "solarium:dissolver"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 230
+  },
+  "parent": "solarium:root"
+}

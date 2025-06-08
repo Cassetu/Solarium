@@ -28,9 +28,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> RESIDUUM_SMELTABLES = List.of(ModBlocks.CHARRED_RESIDUUM,
                 ModBlocks.MOLTEN_RESIDUUM);
+        List<ItemConvertible> SILT_SMELTABLES = List.of(ModBlocks.BLIGHTED_SILT);
 
         offerSmelting(exporter, RESIDUUM_SMELTABLES, RecipeCategory.MISC, ModItems.ASHEN_REMNANTS, 0.05f, 500, "residuum");
         offerBlasting(exporter, RESIDUUM_SMELTABLES, RecipeCategory.MISC, ModItems.ASHEN_REMNANTS, 0.05f, 250, "residuum");
+
+        offerSmelting(exporter, SILT_SMELTABLES, RecipeCategory.MISC, ModItems.BLIGHTED_SILT_DUST, 0.25f, 120, "silt");
 
         //offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.VERDANCY_CORE, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
